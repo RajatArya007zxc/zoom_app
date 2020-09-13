@@ -3,6 +3,11 @@ const app =express();
 const server=require('http').Server(app);
 const {v4:uuidv4} =require('uuid');
 
+app.use(express.static('public')) //this is used to public the script file
+
+
+
+
 //for ejs
 app.set('view engine','ejs')
 
